@@ -1,0 +1,400 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		ACFCEAAA2CFB3FBC30B81C10 /* Pods_PhotoMozaic.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1E8B246154E3B75AF6B6A227 /* Pods_PhotoMozaic.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
+		F4B454D31B3D594800764482 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B454D21B3D594800764482 /* AppDelegate.swift */; };
+		F4B454D51B3D594800764482 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B454D41B3D594800764482 /* ViewController.swift */; };
+		F4B454D81B3D594800764482 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F4B454D61B3D594800764482 /* Main.storyboard */; };
+		F4B454DA1B3D594800764482 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F4B454D91B3D594800764482 /* Images.xcassets */; };
+		F4B454DD1B3D594800764482 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = F4B454DB1B3D594800764482 /* LaunchScreen.xib */; };
+		F4B454F41B3D5A0200764482 /* PhotoMozaic.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B454F31B3D5A0200764482 /* PhotoMozaic.swift */; };
+		F4B454F61B3D7C2E00764482 /* PhotoMozaicItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B454F51B3D7C2E00764482 /* PhotoMozaicItem.swift */; };
+		F4B454F81B3D803300764482 /* UIImageView+PhotoMozaicItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B454F71B3D803300764482 /* UIImageView+PhotoMozaicItem.swift */; };
+		F4B454FA1B3D94AC00764482 /* PhotoMozaicDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F4B454F91B3D94AC00764482 /* PhotoMozaicDelegate.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		1E8B246154E3B75AF6B6A227 /* Pods_PhotoMozaic.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PhotoMozaic.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6BA4E6C6E83727E8D644BA8C /* Pods-PhotoMozaic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoMozaic.debug.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoMozaic/Pods-PhotoMozaic.debug.xcconfig"; sourceTree = "<group>"; };
+		E1B78C3F4C4E2468ED9DED94 /* Pods-PhotoMozaic.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PhotoMozaic.release.xcconfig"; path = "Pods/Target Support Files/Pods-PhotoMozaic/Pods-PhotoMozaic.release.xcconfig"; sourceTree = "<group>"; };
+		F4B454CD1B3D594800764482 /* PhotoMozaic.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PhotoMozaic.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F4B454D11B3D594800764482 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F4B454D21B3D594800764482 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F4B454D41B3D594800764482 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F4B454D71B3D594800764482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F4B454D91B3D594800764482 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F4B454DC1B3D594800764482 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		F4B454F31B3D5A0200764482 /* PhotoMozaic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoMozaic.swift; sourceTree = "<group>"; };
+		F4B454F51B3D7C2E00764482 /* PhotoMozaicItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoMozaicItem.swift; sourceTree = "<group>"; };
+		F4B454F71B3D803300764482 /* UIImageView+PhotoMozaicItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImageView+PhotoMozaicItem.swift"; sourceTree = "<group>"; };
+		F4B454F91B3D94AC00764482 /* PhotoMozaicDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoMozaicDelegate.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F4B454CA1B3D594800764482 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ACFCEAAA2CFB3FBC30B81C10 /* Pods_PhotoMozaic.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4DF8B940F56535B1FED3C470 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1E8B246154E3B75AF6B6A227 /* Pods_PhotoMozaic.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F4B454C41B3D594800764482 = {
+			isa = PBXGroup;
+			children = (
+				F4B454F21B3D59C600764482 /* Classes */,
+				F4B454CF1B3D594800764482 /* PhotoMozaic */,
+				F4B454CE1B3D594800764482 /* Products */,
+				F680488DAE20F68F322063FD /* Pods */,
+				4DF8B940F56535B1FED3C470 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F4B454CE1B3D594800764482 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F4B454CD1B3D594800764482 /* PhotoMozaic.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F4B454CF1B3D594800764482 /* PhotoMozaic */ = {
+			isa = PBXGroup;
+			children = (
+				F4B454D21B3D594800764482 /* AppDelegate.swift */,
+				F4B454D41B3D594800764482 /* ViewController.swift */,
+				F4B454D61B3D594800764482 /* Main.storyboard */,
+				F4B454D91B3D594800764482 /* Images.xcassets */,
+				F4B454DB1B3D594800764482 /* LaunchScreen.xib */,
+				F4B454D01B3D594800764482 /* Supporting Files */,
+			);
+			path = PhotoMozaic;
+			sourceTree = "<group>";
+		};
+		F4B454D01B3D594800764482 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F4B454D11B3D594800764482 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F4B454F21B3D59C600764482 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				F4B454F31B3D5A0200764482 /* PhotoMozaic.swift */,
+				F4B454F51B3D7C2E00764482 /* PhotoMozaicItem.swift */,
+				F4B454F71B3D803300764482 /* UIImageView+PhotoMozaicItem.swift */,
+				F4B454F91B3D94AC00764482 /* PhotoMozaicDelegate.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		F680488DAE20F68F322063FD /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6BA4E6C6E83727E8D644BA8C /* Pods-PhotoMozaic.debug.xcconfig */,
+				E1B78C3F4C4E2468ED9DED94 /* Pods-PhotoMozaic.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F4B454CC1B3D594800764482 /* PhotoMozaic */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F4B454EC1B3D594800764482 /* Build configuration list for PBXNativeTarget "PhotoMozaic" */;
+			buildPhases = (
+				A5E257E211D72953CE67C538 /* Check Pods Manifest.lock */,
+				F4B454C91B3D594800764482 /* Sources */,
+				F4B454CA1B3D594800764482 /* Frameworks */,
+				F4B454CB1B3D594800764482 /* Resources */,
+				BB888DFFA146A1B26CC2F963 /* Copy Pods Resources */,
+				A68F0CD6D9E2572E0976CB92 /* Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PhotoMozaic;
+			productName = PhotoMozaic;
+			productReference = F4B454CD1B3D594800764482 /* PhotoMozaic.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F4B454C51B3D594800764482 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = fettle;
+				TargetAttributes = {
+					F4B454CC1B3D594800764482 = {
+						CreatedOnToolsVersion = 6.3.2;
+					};
+				};
+			};
+			buildConfigurationList = F4B454C81B3D594800764482 /* Build configuration list for PBXProject "PhotoMozaic" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F4B454C41B3D594800764482;
+			productRefGroup = F4B454CE1B3D594800764482 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F4B454CC1B3D594800764482 /* PhotoMozaic */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F4B454CB1B3D594800764482 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B454D81B3D594800764482 /* Main.storyboard in Resources */,
+				F4B454DD1B3D594800764482 /* LaunchScreen.xib in Resources */,
+				F4B454DA1B3D594800764482 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A5E257E211D72953CE67C538 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A68F0CD6D9E2572E0976CB92 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotoMozaic/Pods-PhotoMozaic-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BB888DFFA146A1B26CC2F963 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-PhotoMozaic/Pods-PhotoMozaic-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F4B454C91B3D594800764482 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F4B454FA1B3D94AC00764482 /* PhotoMozaicDelegate.swift in Sources */,
+				F4B454F81B3D803300764482 /* UIImageView+PhotoMozaicItem.swift in Sources */,
+				F4B454F61B3D7C2E00764482 /* PhotoMozaicItem.swift in Sources */,
+				F4B454F41B3D5A0200764482 /* PhotoMozaic.swift in Sources */,
+				F4B454D51B3D594800764482 /* ViewController.swift in Sources */,
+				F4B454D31B3D594800764482 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		F4B454D61B3D594800764482 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4B454D71B3D594800764482 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F4B454DB1B3D594800764482 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F4B454DC1B3D594800764482 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F4B454EA1B3D594800764482 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F4B454EB1B3D594800764482 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F4B454ED1B3D594800764482 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6BA4E6C6E83727E8D644BA8C /* Pods-PhotoMozaic.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PhotoMozaic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F4B454EE1B3D594800764482 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E1B78C3F4C4E2468ED9DED94 /* Pods-PhotoMozaic.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = PhotoMozaic/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F4B454C81B3D594800764482 /* Build configuration list for PBXProject "PhotoMozaic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4B454EA1B3D594800764482 /* Debug */,
+				F4B454EB1B3D594800764482 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F4B454EC1B3D594800764482 /* Build configuration list for PBXNativeTarget "PhotoMozaic" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F4B454ED1B3D594800764482 /* Debug */,
+				F4B454EE1B3D594800764482 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F4B454C51B3D594800764482 /* Project object */;
+}
