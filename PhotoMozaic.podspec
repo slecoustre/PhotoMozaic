@@ -13,7 +13,7 @@ Pod::Spec.new do |s|
   s.summary          = "Affichage des photos en mozaic."
   s.description      = ""
   s.homepage         = "https://github.com/slecoustre/PhotoMozaic"
-  # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
+  s.screenshots     = "https://raw.githubusercontent.com/slecoustre/PhotoMozaic/master/ScreenShot.png"
   s.license          = 'MIT'
   s.author           = { "Stéphane LE COUSTRE" => "slecoustre@fettle.fr" }
   s.source           = { :git => "https://github.com/slecoustre/PhotoMozaic.git", :tag => s.version.to_s }
