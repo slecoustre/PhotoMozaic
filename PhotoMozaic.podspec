@@ -22,6 +22,6 @@ Pod::Spec.new do |s|
   s.requires_arc = true
 
   s.source_files = 'Classes/**/*'
-
+  s.frameworks = 'UIKit'
   s.dependency 'SDWebImage'
 end
