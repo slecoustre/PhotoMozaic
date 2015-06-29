@@ -8,6 +8,6 @@
 
 import Foundation
 
-protocol PhotoMozaicDelegate {
+public protocol PhotoMozaicDelegate {
     func photoMozaicSelected(index: Int)
 }

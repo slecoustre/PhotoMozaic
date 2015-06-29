@@ -4,5 +4,6 @@ use_frameworks!
 
 target 'PhotoMozaic' do
 	pod 'SDWebImage'
+    pod 'PhotoMozaic'
 end
 

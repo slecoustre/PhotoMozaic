@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-class PhotoMozaic: UIView {
+public class PhotoMozaic: UIView {
     
     
     @IBInspectable var textColor: UIColor = UIColor.whiteColor() {
@@ -50,7 +50,7 @@ class PhotoMozaic: UIView {
         self.createSubviews()
     }
     
-    required init(coder aDecoder: NSCoder) {
+    required public init(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         self.createSubviews()
     }
@@ -226,7 +226,7 @@ class PhotoMozaic: UIView {
 
     // MARK: - prepareForInterfaceBuilder
     
-    override func prepareForInterfaceBuilder() {
+    override public func prepareForInterfaceBuilder() {
         super.prepareForInterfaceBuilder()
         self.photos = [
             PhotoMozaicItem(image: imageWithColor(UIColor.purpleColor(), size: CGSize(width: 10, height: 10))),
