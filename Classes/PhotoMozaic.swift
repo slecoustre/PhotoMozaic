@@ -134,7 +134,7 @@ public class PhotoMozaic: UIView {
     }
     
     private func createConstraints() {
-        self.removeAllConstraints(self)
+        self.removeAllConstraints(self, isSuperView: true)
         
         var views: [String: UIView] = ["img1":img1, "img2":img2, "img3":img3, "img4":img4, "lbl": self.numberLabel]
         
@@ -202,12 +202,22 @@ public class PhotoMozaic: UIView {
         }
     }
     
-    private func removeAllConstraints(view: UIView) {
+    private func removeAllConstraints(view: UIView, isSuperView: Bool) {
         for child in view.subviews {
-            self.removeAllConstraints(child as! UIView)
+            self.removeAllConstraints(child as! UIView, isSuperView: false)
         }
         
-        view.removeConstraints(view.constraints())
+        if isSuperView {
+            for c in view.constraints(){
+                let cc = c as! NSLayoutConstraint
+                if cc.secondItem != nil {
+                    view.removeConstraint(cc)
+                }
+            }
+        }
+        else {
+            view.removeConstraints(view.constraints())
+        }
     }
     
     private func imageWithColor(color: UIColor, size: CGSize) -> UIImage{
