@@ -7,7 +7,8 @@
 //
 
 import Foundation
+import UIKit
 
 public protocol PhotoMozaicDelegate {
-    func photoMozaicSelected(index: Int)
+    func photoMozaicSelected(index: Int, sender: UIImageView)
 }
