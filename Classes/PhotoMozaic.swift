@@ -12,28 +12,28 @@ import UIKit
 public class PhotoMozaic: UIView {
     
     
-    @IBInspectable var textColor: UIColor = UIColor.whiteColor() {
+    @IBInspectable public var textColor: UIColor = UIColor.whiteColor() {
         didSet {
             self.numberLabel.textColor = self.textColor
         }
     }
-    @IBInspectable var backgroundColorLabel: UIColor = UIColor.blackColor().colorWithAlphaComponent(0.70) {
+    @IBInspectable public var backgroundColorLabel: UIColor = UIColor.blackColor().colorWithAlphaComponent(0.70) {
         didSet {
             self.numberLabel.backgroundColor = self.backgroundColorLabel
         }
     }
-    @IBInspectable var margin: UInt = 0 {
+    @IBInspectable public var margin: UInt = 0 {
         didSet {
             self.createConstraints()
         }
     }
-    var font: UIFont = UIFont.systemFontOfSize(40)
-    var photos: [PhotoMozaicItem] = [] {
+    public var font: UIFont = UIFont.systemFontOfSize(40)
+    public var photos: [PhotoMozaicItem] = [] {
         didSet {
             self.createConstraints()
         }
     }
-    var contentPhotoMode: UIViewContentMode = UIViewContentMode.ScaleAspectFill {
+    public var contentPhotoMode: UIViewContentMode = UIViewContentMode.ScaleAspectFill {
         didSet {
             self.img1.contentMode = self.contentPhotoMode
             self.img2.contentMode = self.contentPhotoMode
@@ -41,11 +41,11 @@ public class PhotoMozaic: UIView {
             self.img4.contentMode = self.contentPhotoMode
         }
     }
-    var delegate: PhotoMozaicDelegate?
+    public var delegate: PhotoMozaicDelegate?
     
     // MARK: - init
     
-    override init(frame: CGRect) {
+    override public init(frame: CGRect) {
         super.init(frame: frame)
         self.createSubviews()
     }

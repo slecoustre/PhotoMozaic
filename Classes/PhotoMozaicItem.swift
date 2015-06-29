@@ -16,11 +16,11 @@ public class PhotoMozaicItem {
     var url: String?
     var image: UIImage?
     
-    init(url: String) {
+    public init(url: String) {
         self.url = url
     }
     
-    init(image: UIImage) {
+    public init(image: UIImage) {
         self.image = image
     }
 }
