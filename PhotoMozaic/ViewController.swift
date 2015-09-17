@@ -32,7 +32,7 @@ class ViewController: UIViewController, PhotoMozaicDelegate {
     }
 
     func photoMozaicSelected(index: Int) {
-        println(index)
+        print(index, terminator: "")
     }
 
     
