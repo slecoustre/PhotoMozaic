@@ -50,8 +50,8 @@ public class PhotoMozaic: UIView {
         self.createSubviews()
     }
     
-    required public init(coder aDecoder: NSCoder) {
-        super.init(coder: aDecoder)
+    public init?(coder aDecoder: NSCoder) {
+        super.init?(coder: aDecoder)
         self.createSubviews()
     }
     
@@ -85,7 +85,7 @@ public class PhotoMozaic: UIView {
     private func createSubviews() {
         self.img1 = UIImageView()
         self.img1.clipsToBounds = true
-        self.img1.setTranslatesAutoresizingMaskIntoConstraints(false)
+        self.img1.translatesAutoresizingMaskIntoConstraints = false
         self.img1.contentMode = self.contentPhotoMode
         self.img1.userInteractionEnabled = true
         self.addSubview(self.img1)
@@ -94,7 +94,7 @@ public class PhotoMozaic: UIView {
         
         self.img2 = UIImageView()
         self.img2.clipsToBounds = true
-        self.img2.setTranslatesAutoresizingMaskIntoConstraints(false)
+        self.img2.translatesAutoresizingMaskIntoConstraints = false
         self.img2.contentMode = self.contentPhotoMode
         self.img2.userInteractionEnabled = true
         self.addSubview(self.img2)
@@ -103,7 +103,7 @@ public class PhotoMozaic: UIView {
         
         self.img3 = UIImageView()
         self.img3.clipsToBounds = true
-        self.img3.setTranslatesAutoresizingMaskIntoConstraints(false)
+        self.img3.translatesAutoresizingMaskIntoConstraints = false
         self.img3.contentMode = self.contentPhotoMode
         self.img3.userInteractionEnabled = true
         self.addSubview(self.img3)
@@ -112,7 +112,7 @@ public class PhotoMozaic: UIView {
         
         self.img4 = UIImageView()
         self.img4.clipsToBounds = true
-        self.img4.setTranslatesAutoresizingMaskIntoConstraints(false)
+        self.img4.translatesAutoresizingMaskIntoConstraints = false
         self.img4.contentMode = self.contentPhotoMode
         self.img4.userInteractionEnabled = true
         self.addSubview(self.img4)
@@ -122,7 +122,7 @@ public class PhotoMozaic: UIView {
         self.numberLabel = UILabel()
         self.numberLabel.font = self.font
         self.numberLabel.textColor = self.textColor
-        self.numberLabel.setTranslatesAutoresizingMaskIntoConstraints(false)
+        self.numberLabel.translatesAutoresizingMaskIntoConstraints = false
         self.numberLabel.textAlignment = NSTextAlignment.Center
         self.numberLabel.backgroundColor = self.backgroundColorLabel
         self.numberLabel.userInteractionEnabled = true
@@ -136,7 +136,7 @@ public class PhotoMozaic: UIView {
     private func createConstraints() {
         self.removeAllConstraints(self)
         
-        var views: [String: UIView] = ["img1":img1, "img2":img2, "img3":img3, "img4":img4, "lbl": self.numberLabel]
+        let views: [String: UIView] = ["img1":img1, "img2":img2, "img3":img3, "img4":img4, "lbl": self.numberLabel]
         
         if self.photos.count > 0 {
             self.img1.setPhotoMozaicItem(self.photos[0])
@@ -161,32 +161,32 @@ public class PhotoMozaic: UIView {
         
         switch self.photos.count {
         case 1:
-            self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[img1]|", options: NSLayoutFormatOptions.allZeros, metrics: nil, views: views))
-            self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[img1]|", options: NSLayoutFormatOptions.allZeros, metrics: nil, views: views))
+            self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[img1]|", options: NSLayoutFormatOptions(), metrics: nil, views: views))
+            self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[img1]|", options: NSLayoutFormatOptions(), metrics: nil, views: views))
             break
             
         case 2:
-            self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[img1]\(cmargin)[img2(==img1)]|", options: NSLayoutFormatOptions.allZeros, metrics: nil, views: views))
-            self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[img1]|", options: NSLayoutFormatOptions.allZeros, metrics: nil, views: views))
-            self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[img2]|", options: NSLayoutFormatOptions.allZeros, metrics: nil, views: views))
+            self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[img1]\(cmargin)[img2(==img1)]|", options: NSLayoutFormatOptions(), metrics: nil, views: views))
+            self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[img1]|", options: NSLayoutFormatOptions(), metrics: nil, views: views))
+            self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[img2]|", options: NSLayoutFormatOptions(), metrics: nil, views: views))
             break
             
         case 3:
-            self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[img1]\(cmargin)[img2(==img1)]|", options: NSLayoutFormatOptions.allZeros, metrics: nil, views: views))
-            self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:[img1]\(cmargin)[img3(==img1)]|", options: NSLayoutFormatOptions.allZeros, metrics: nil, views: views))
-            self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[img1]|", options: NSLayoutFormatOptions.allZeros, metrics: nil, views: views))
-            self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[img2]\(cmargin)[img3(==img2)]|", options: NSLayoutFormatOptions.allZeros, metrics: nil, views: views))
+            self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[img1]\(cmargin)[img2(==img1)]|", options: NSLayoutFormatOptions(), metrics: nil, views: views))
+            self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:[img1]\(cmargin)[img3(==img1)]|", options: NSLayoutFormatOptions(), metrics: nil, views: views))
+            self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[img1]|", options: NSLayoutFormatOptions(), metrics: nil, views: views))
+            self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[img2]\(cmargin)[img3(==img2)]|", options: NSLayoutFormatOptions(), metrics: nil, views: views))
             break
             
         default:
             if self.photos.count > 3{
-                self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[img1]\(cmargin)[img2(==img1)]|", options: NSLayoutFormatOptions.allZeros, metrics: nil, views: views))
-                self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:[img1]\(cmargin)[img3]\(cmargin)[img4(==img3)]|", options: NSLayoutFormatOptions.allZeros, metrics: nil, views: views))
-                self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[img1]|", options: NSLayoutFormatOptions.allZeros, metrics: nil, views: views))
-                self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[img2]\(cmargin)[img3(==img2)]|", options: NSLayoutFormatOptions.allZeros, metrics: nil, views: views))
-                self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[img2]\(cmargin)[img4(==img2)]|", options: NSLayoutFormatOptions.allZeros, metrics: nil, views: views))
-                self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:[img3]\(cmargin)[lbl]|", options: NSLayoutFormatOptions.allZeros, metrics: nil, views: views))
-                self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[img2]\(cmargin)[lbl]|", options: NSLayoutFormatOptions.allZeros, metrics: nil, views: views))
+                self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:|[img1]\(cmargin)[img2(==img1)]|", options: NSLayoutFormatOptions(), metrics: nil, views: views))
+                self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:[img1]\(cmargin)[img3]\(cmargin)[img4(==img3)]|", options: NSLayoutFormatOptions(), metrics: nil, views: views))
+                self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[img1]|", options: NSLayoutFormatOptions(), metrics: nil, views: views))
+                self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[img2]\(cmargin)[img3(==img2)]|", options: NSLayoutFormatOptions(), metrics: nil, views: views))
+                self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:|[img2]\(cmargin)[img4(==img2)]|", options: NSLayoutFormatOptions(), metrics: nil, views: views))
+                self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("H:[img3]\(cmargin)[lbl]|", options: NSLayoutFormatOptions(), metrics: nil, views: views))
+                self.addConstraints(NSLayoutConstraint.constraintsWithVisualFormat("V:[img2]\(cmargin)[lbl]|", options: NSLayoutFormatOptions(), metrics: nil, views: views))
             }
             break
         }
@@ -204,16 +204,16 @@ public class PhotoMozaic: UIView {
     
     private func removeAllConstraints(view: UIView) {
         for child in view.subviews {
-            self.removeAllConstraints(child as! UIView)
+            self.removeAllConstraints(child )
         }
         
-        view.removeConstraints(view.constraints())
+        view.removeConstraints(view.constraints)
     }
     
     private func imageWithColor(color: UIColor, size: CGSize) -> UIImage{
-        var rect = CGRect(x: 0, y: 0, width: size.width, height: size.height)
+        let rect = CGRect(x: 0, y: 0, width: size.width, height: size.height)
         UIGraphicsBeginImageContextWithOptions(rect.size, false, 0)
-        var context = UIGraphicsGetCurrentContext()
+        let context = UIGraphicsGetCurrentContext()
         CGContextSetFillColorWithColor(context, color.CGColor)
         CGContextFillRect(context, rect)
     
