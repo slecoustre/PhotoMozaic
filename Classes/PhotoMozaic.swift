@@ -66,19 +66,19 @@ public class PhotoMozaic: UIView {
     // MARK: - Action TapGesture
     
     func img1TapHandler(gestureRecognizer: UIGestureRecognizer) {
-        self.delegate?.photoMozaicSelected(0)
+        self.delegate?.photoMozaicSelected(0, sender: self.img1)
     }
     
     func img2TapHandler(gestureRecognizer: UIGestureRecognizer) {
-        self.delegate?.photoMozaicSelected(1)
+        self.delegate?.photoMozaicSelected(1, sender: self.img2)
     }
     
     func img3TapHandler(gestureRecognizer: UIGestureRecognizer) {
-        self.delegate?.photoMozaicSelected(2)
+        self.delegate?.photoMozaicSelected(2, sender: self.img3)
     }
     
     func img4TapHandler(gestureRecognizer: UIGestureRecognizer) {
-        self.delegate?.photoMozaicSelected(3)
+        self.delegate?.photoMozaicSelected(3, sender: self.img4)
     }
     
     // MARK: - private method

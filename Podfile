@@ -4,6 +4,6 @@ use_frameworks!
 
 target 'PhotoMozaic' do
     pod 'SDWebImage'
-    pod 'PhotoMozaic'
+    pod 'PhotoMozaic', :path => '.'
 end
 

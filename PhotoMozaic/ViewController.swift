@@ -31,7 +31,7 @@ class ViewController: UIViewController, PhotoMozaicDelegate {
         // Dispose of any resources that can be recreated.
     }
 
-    func photoMozaicSelected(index: Int) {
+    func photoMozaicSelected(index: Int, sender: UIImageView) {
         print(index, terminator: "")
     }
 
